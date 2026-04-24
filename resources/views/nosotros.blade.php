@@ -1,0 +1,157 @@
+@extends('landing')
+@section('title')| Nosotros @endsection
+@section('styles')
+@vite('resources/css/Nosotros.css')
+@endsection
+@section('content')
+ <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <symbol id="icon-cruz" viewBox="0 0 108 109">
+            <path
+                d="M54.2502 0.206332C62.6111 0.14937 70.953 3.87237 70.9049 11.5463V37.3865H93.8422C112.622 37.4423 112.267 70.777 93.8422 70.8328H70.9049V73.7691C70.8693 77.0774 68.3065 78.3592 66.7871 78.3422C65.2675 78.3251 62.9188 77.0534 62.9807 73.7683L62.9205 65.2513L63.1498 64.117C63.6651 62.9 64.8719 62.0461 66.2781 62.0461H92.3411C102.747 61.9924 102.922 45.4886 92.8328 45.4415H66.0858C64.1733 45.4413 62.623 43.8898 62.623 41.976L62.5755 41.817C62.616 33.0684 62.6565 22.4823 62.6971 14.3459C62.7431 9.99196 58.5784 7.77045 54.3784 7.74679C50.1783 7.72293 45.9425 9.89691 45.8464 14.3338C45.7987 21.8785 45.8762 33.5462 45.86 42.1219L45.6006 43.5203C45.257 44.3316 44.6061 44.9815 43.7938 45.3246L42.4939 45.5867H15.0224C4.69776 45.7363 5.19333 62.1804 15.4951 62.1846H42.253C44.1653 62.2576 45.7155 63.8091 45.7155 65.7228L45.7332 66.8983C45.7022 74.9284 45.5541 87.3693 45.5934 92.7531C45.6464 102.167 62.8635 102.665 62.9106 93.1888C62.9264 89.7066 66.0037 89.2903 66.7871 89.2691C68.6673 89.2183 70.959 90.4966 70.9049 93.2246V94.2416C71.0011 113.388 37.5372 112.325 37.4814 94.2416C37.4308 86.3879 37.5322 78.6863 37.4814 70.8328H13.633C-5.1973 70.8276 -3.83053 37.3917 13.4811 37.3865H37.4814V11.5463C37.5094 4.1003 45.8892 0.263336 54.2502 0.206332Z"
+                fill="currentColor" />
+        </symbol>
+    </svg>
+<div style="overflow-x: hidden;">
+        <div class="bg-head" style="background-image: url(../../img/portadas/nosotros.webp);">
+            <div class="container">
+                <div class="d-flex py-4" style="align-items: stretch;gap: 1rem;overflow-x: hidden;">
+                    <span class="barra"></span>
+                    <h1 data-aos="fade-right">Nosotros</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container py-6 text-center" data-aos="fade-up">
+            <svg class="cruz cruz--primary" style="bottom:0%; left:0%;z-index: -1;">
+                <use href="#icon-cruz"></use>
+            </svg>
+            <svg class="cruz cruz--pink" style="top:10px; right:-5%">
+                <use href="#icon-cruz"></use>
+            </svg>
+                        <p class="mb-0">En <b style="color: #1E394E ;">QHALIMED</b>, somos una clínica médica en Trujillo comprometida con el cuidado integral de la salud, brindando
+                atención
+                médica personalizada, oportuna y de calidad. Nuestro propósito es acompañar a cada paciente en su camino
+                hacia el bienestar, ofreciendo un servicio humano que combina conocimiento médico, tecnología
+                actualizada y un trato cálido.</p>
+        </div>
+
+        <div class="historia">
+            <div class="container position-relative">
+                <svg class="cruz cruz--white" style="bottom:20px; right:0px">
+                <use href="#icon-cruz"></use>
+            </svg>
+            <svg class="cruz cruz-md cruz--white" style="opacity:1;top: 150px;
+    left: 40%;
+    width: 40px;animation-duration: 5s; ">
+                <use href="#icon-cruz"></use>
+            </svg>
+                <div class="row">
+                    <div class="col-lg-7 order-lg-2 d-flex align-content-between flex-wrap">
+                        <div class="d-none d-sm-flex caracteristicas">
+                            <div data-aos="fade-left"><i class="fa-solid fa-heart-pulse fa-2xl"></i>
+                                <h5>Diagnóstico preciso</h5>
+                            </div>
+                            <div data-aos="fade-left" data-aos-delay="200"><i
+                                    class="fa-solid fa-user-doctor fa-2xl"></i>
+                                <h5>Seguimiento continuo</h5>
+                            </div>
+                            <div data-aos="fade-left" data-aos-delay="400" class="d-none d-xl-block"><i
+                                    class="fa-solid fa-laptop-medical fa-2xl"></i>
+                                <h5>Innovación constante</h5>
+                            </div>
+                            <div data-aos="fade-left" data-aos-delay="600"><i class="fa-solid fa-hospital fa-2xl"></i>
+                                <h5>Resultados confiables</h5>
+                            </div>
+                        </div>
+                        <div class="content pt-5 py-6">
+                            <h2 class="mb-4">Historia</h2>
+                            <p>QHALIMED nace del compromiso con la salud y la convicción de que cada paciente merece una
+                                atención cercana, innovadora y digna. Iniciamos este camino con la visión de transformar
+                                la forma en que se brinda el cuidado médico, integrando tecnología, calidez humana y un
+                                enfoque personalizado en cada diagnóstico y tratamiento. Desde nuestros inicios,
+                                trabajamos con pasión para que más personas accedan a servicios de salud confiables,
+                                oportunos y centrados en su bienestar.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-1 align-content-end">
+                        <img src="../../img/historiaimg.webp" style="width: 90%;height:auto;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img-mision"
+            style="background-image: url('../../img/misionBackground.webp');background-size: cover;background-attachment: fixed;overflow-x: hidden;">
+            <div class="back-mn">
+                <div class="container">
+                    <div class="row py-6">
+                        <div class="col-md-6 mision" data-aos="fade-right">
+                            <h2>Misión</h2>
+                            <div class="mision-content">
+                                <p>Ofrecer atención médica integral y confiable, uniendo innovación tecnológica,
+                                    diagnóstico
+                                    preciso y un trato humano cercano, para cuidar la salud y mejorar la calidad de vida
+                                    de
+                                    nuestros pacientes, tanto de forma presencial como mediante telemedicina.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-5 mt-md-0 mision" data-aos="fade-left">
+                            <h2>Visión</h2>
+                            <div class="mision-content">
+                                <p>Consolidarnos como la clínica líder en atención ambulatoria y diagnóstico médico en
+                                    la
+                                    región, reconocida por transformar la experiencia del paciente a través de la
+                                    empatía,
+                                    la innovación y la excelencia en cada servicio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-xxl ">
+                <div class="row">
+                    <div class="col-lg-7 py-6 pb-10" data-aos="fade-right" data-aos-easing="linear"
+                        data-aos-duration="500" data-aos-offset="200" style="background-color: white;">
+                        <div class="px-5 mx-md-5">
+                            <div class="text-center justify-items-center">
+                                <h2>Nuestros <span style="color:#fe6f63">valores</span></h2>
+                            </div>
+                            <div class="valores mt-4">
+                                <p><span><i class="fa-solid fa-circle-check me-2"></i>Humanidad: </span>Ponemos a la
+                                    persona
+                                    en
+                                    el
+                                    centro de todo lo que hacemos, con respeto, escucha activa y calidez en cada
+                                    consulta.
+                                </p>
+                                <p><span><i class="fa-solid fa-circle-check me-2"></i>Innovación: </span>Incorporamos
+                                    tecnologías
+                                    médicas y digitales que optimizan el diagnóstico, el tratamiento y la experiencia
+                                    del
+                                    paciente.
+                                </p>
+                                <p><span><i class="fa-solid fa-circle-check me-2"></i>Confianza: </span>Actuamos con
+                                    ética,
+                                    responsabilidad y transparencia, generando vínculos sólidos con nuestros pacientes y
+                                    profesionales.</p>
+                                <p><span><i class="fa-solid fa-circle-check me-2"></i>Excelencia médica: </span>Nuestro
+                                    equipo
+                                    está
+                                    en constante capacitación y mejora para ofrecer servicios seguros, actualizados y
+                                    eficaces.
+                                </p>
+                                <p><span><i class="fa-solid fa-circle-check me-2"></i>Accesibilidad: </span>Acercamos la
+                                    salud a
+                                    más
+                                    personas mediante modelos flexibles de atención y canales digitales amigables.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section('javascript')
+
+@endsection

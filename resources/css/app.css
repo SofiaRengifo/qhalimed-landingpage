@@ -1,0 +1,74 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'aos/dist/aos.css';
+
+
+@import './styles.css';
+
+:root {
+    --wa-color: #25d366;
+    --wa-dark: #128c7e;
+  }
+
+  .wa-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* El Botón con Efecto de Respiración */
+  .wa-button {
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(45deg, var(--wa-color), #5ff093);
+    border-radius: 50% 50% 5px 50%; /* Forma un poco más orgánica */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+  }
+
+  /* Tooltip Animado */
+  .wa-tooltip {
+    background: white;
+    padding: 10px 18px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-right: 15px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    pointer-events: none;
+    position: relative;
+  }
+
+  /* Triangulito del tooltip */
+  .wa-tooltip::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 8px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+
+  /* Interacciones */
+  .wa-container:hover .wa-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .wa-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+  }
