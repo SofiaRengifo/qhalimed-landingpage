@@ -89,7 +89,7 @@
             </svg>
         </div>
         <div class="text-center">
-            <p class="mb-2" style="color: #2e8891;font-family: 'Golos', sans-serif;">© 2026 QHALIMED. Todos los derechos reservados.</p>
+            <p class="mb-2" style="color: #2e8891;font-family: 'Golos', sans-serif;">© {{ date('Y') }} QHALIMED. Todos los derechos reservados.</p>
         </div>
     </div>
 </div>
