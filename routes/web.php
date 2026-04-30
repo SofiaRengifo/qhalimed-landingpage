@@ -6,8 +6,7 @@ use App\Http\Controllers\BlogController;
 
 Route::get('/', [BlogController::class, 'inicio'])->name('inicio');
 Route::get('/nosotros', function () { return view('nosotros');})-> name('nosotros');
-Route::get('/servicios', function () { return view('servicios.layout');})-> name('servicios');
-Route::redirect('/servicios', '/servicios/pediatria');
+Route::redirect('/servicios', '/servicios/pediatria')-> name('servicios');
 
 Route::get('/medicos', [MedicoController::class, 'index'])->name('medicos');
 

@@ -15,7 +15,7 @@
                 <div class="contact-info d-flex align-items-center">
                     <div class="d-flex align-items-center">
                         <i class="fa-solid fa-envelope"></i>
-                        <a>contact@example.com</a>
+                        <a>ayuda@qhalimed.com</a>
                     </div>
                     <div class="d-flex align-items-center ms-4">
                         <i class="fa-solid fa-phone"></i>
@@ -53,7 +53,7 @@
                         </li>
                         <li><a href="{{ route('blog') }}" class="{{ request()->routeIs('blog*') ? 'active' : '' }}">Blog</a></li>
                         <li><a href="{{ route('contacto') }}" class="{{ request()->routeIs('contacto') ? 'active' : '' }}">Contacto</a></li>
-                        <a class="cta-btn pulse-effect" href="https://wa.me/51972240403?text=Hola%20Qhalimed%20quiero%20agendar%20una%20cita">Agendar una cita</a>
+                        <a class="cta-btn pulse-effect" href="https://wa.me/51972240403?text=Hola%20Qhalimed%20quiero%20agendar%20una%20cita" target="_blank">Agendar una cita</a>
                     </ul>
                 </nav>
             </div>

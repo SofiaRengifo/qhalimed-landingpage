@@ -32,6 +32,13 @@
   src: url('../fonts/GolosText-Bold.ttf') format('truetype'); 
   font-weight:bold;
 }
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
 body {
     margin: 0;
     font-family: var(--bs-body-font-family);
