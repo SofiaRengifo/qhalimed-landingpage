@@ -71,7 +71,7 @@
     </div>
 
 </div>
-<div class="presentacion container py-7">
+<div class="presentacion container py-7 px-sm">
     <div class="row">
         <div class="col-12 col-md-6 order-md-2">
             <h2 data-aos="fade-up">Comprometidos con tu bienestar, guiados por vocación</h2>
@@ -212,7 +212,7 @@
 
 
 </div>
-<div class="emergency" style=" margin-top: -100px ">
+<div class="emergency">
     <div class="container py-6">
         <div class="text-center py-5">
             <h2 data-aos="fade-up">Tu salud, estés donde estés</h2>
@@ -222,38 +222,38 @@
         </div>
     </div>
 </div>
-<div class="otros-servicios" style=" margin-top: -100px">
+<div class="otros-servicios">
     <div class="container py-7">
         <div class="row text-center align-items-stretch" style="overflow-y: hidden;">
-            <div class="col-lg-6 mt-3">
+            <div class="col-lg-6">
                 <div class="justify-content-end d-flex box h-100" style="background-image:url(../../img/Group12.webp);background-size: cover;background-position-x: center;border-color: #80D8B5;">
                     <div class="content">
                         <h2 data-aos="fade-up" class="px-2" style="color: #00989D;">Delivery de farmacia
                         </h2>
-                        <p class="my-3">Envia tus medicamentos a tu hogar de forma rápida y segura.</p>
+                        <p class="d-none d-sm-block my-3">Envia tus medicamentos a tu hogar de forma rápida y segura.</p>
                         <a data-aos="zoom-in" class="btn bg-green mt-2" href="https://wa.me/51972240403?text=Hola%20Qhalimed,%20quisiera%20pedir%20medicamentos%20por%20delivery" target="_blank" data-discover="true">Solicitar
                             envío</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mt-3">
+            <div class="col-lg-6 mt-4 mt-lg-0">
                 <div class="justify-content-start d-flex box h-100" style="background-image:url(../../img/Group13.webp);background-size: cover;background-position-x: center;border-color: #FE6F63;">
                     <div class="content">
                         <h2 data-aos="fade-up" class="px-2" style="color: #DA5C52;">Médicos a domicilio
                         </h2>
-                        <p class="my-3">Si no puedes o prefieres no salir, podemos atenderte en tu hogar.</p>
+                        <p class="d-none d-sm-block my-3">Si no puedes o prefieres no salir, podemos atenderte en tu hogar.</p>
                         <a data-aos="zoom-in" class="btn bg-pink mt-2" href="https://wa.me/51972240403?text=Hola%20Qhalimed,%20quiero%20solicitar%20un%20médico%20a%20domicilio" target="_blank" data-discover="true">Solicitar
                             visita</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 mt-3 mt-lg-4">
+            <div class="col-12 mt-4">
                 <div class="justify-content-end d-flex box h-100 mh-box" style="background-image:url(../../img/Group11.webp);background-size: cover;background-position-x: center;border-color: #FFC261;">
                     <div class="content">
                         <h2 data-aos="fade-up" class="px-2" style="color: #E5920D;">Servicio de ambulancia
                         </h2>
-                        <p class="my-3">Si necesitas atención médica urgente, puedes solicitar el servicio de
+                        <p class="d-none d-sm-block my-3">Si necesitas atención médica urgente, puedes solicitar el servicio de
                             ambulancia.</p>
                         <a data-aos="zoom-in" class="btn bg-yellow mt-2" href="https://wa.me/51972240403?text=Hola%20Qhalimed,%20quiero%20solicitar%20el%20servicio%20de%20ambulancia" target="_blank" data-discover="true">Solicitar
                             servicio</a>
@@ -286,7 +286,7 @@
                 <div class="circle" style="background: linear-gradient(180deg, #5ad3b2 0%, #ace6cf 100%);">
                     <i class="fa-solid fa-user-doctor"></i>
                 </div>
-                <span data-aos="slide-right" data-aos-easing="linear" class="p-2" style="border-radius: 0px 20px 20px 0px;">Atención Personalizada</span>
+                <span data-aos="slide-right" data-aos-easing="linear" class="p-2" style="border-radius: 0px 20px 20px 0px;background: #ffcb79;">Atención Personalizada</span>
             </div>
         </div>
     </div>

@@ -1,8 +1,7 @@
 @extends('servicios.layout')
 @section('servicio-content')
 <section class="servicesDetails">
-    <div class="container position-relative">
-
+    <div class="container position-relative px-sm">
         <div class="agenda text-center animate-float animate-float">
             <h4 class="text-light">Agenda tu cita hoy</h4>
             <p class="text-light mt-3">Solicita tu cita para <br />Reumatología</p>
@@ -25,7 +24,7 @@
         </div>
     </div>
     <div class="consulta">
-        <div class="container">
+        <div class="container px-sm">
             <div class="row pb-10 justify-content-end">
                 <div class="col-lg-6">
                     <h2>¿Cuándo acudir a consulta?</h2>

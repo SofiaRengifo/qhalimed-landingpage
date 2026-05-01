@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             1200: { perPage: 4 },
             940: { perPage: 3, focus: 'center' },
             675: { perPage: 2, focus: 'center' },
+            359: { perPage: 1, focus: 'center' },
         },
     });
 
