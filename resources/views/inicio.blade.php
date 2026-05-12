@@ -305,7 +305,7 @@
             </div>
         </div>
 
-        <div id="blogSlide" class="splide blog-slider mt-4">
+        <div id="blogSlide" class="splide blog-slider mt-3">
             <div class="splide__track">
                 <ul class="splide__list">
                     @foreach($blogs as $blog)
@@ -331,7 +331,6 @@
                     @endforeach
                 </ul>
             </div>
-            <div class="dots-container" id="blogSlideDots"></div>
         </div>
 
     </div>

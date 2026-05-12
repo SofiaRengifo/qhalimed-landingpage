@@ -14,7 +14,7 @@ class BlogController extends Controller
         $query->whereIn('categoria', $request->categoria);
     }
 
-    $blogs = $query->latest()->paginate(9)->withQueryString();
+    $blogs = $query->latest()->paginate(12)->withQueryString();
 
     return view('blog.blog', compact('blogs'));
 }
@@ -26,9 +26,8 @@ public function detalle($id)
 }
 public function inicio()
 {
-    // Trae los 3 primeros blogs más recientes
     $blogs = Blog::orderBy('created_at', 'desc')
-                 ->take(3)
+                 ->take(7)
                  ->get();
 
     return view('inicio', compact('blogs'));

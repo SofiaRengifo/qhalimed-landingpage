@@ -89,7 +89,9 @@
 }
 
 .text-content{
-  opacity: 0;
+  backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform, opacity;
   margin-top: 60px;
 }
 .text-content p{
@@ -99,6 +101,7 @@
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
+  animation-fill-mode: both;
 }
 
 .fade-right {
@@ -647,6 +650,7 @@ border-radius: 40px;
 }
 .blog-card{
   padding:20px;
+  height: 100%;
 }
 .blog-text{
   padding:1.5rem;
@@ -670,6 +674,10 @@ border-radius: 40px;
 .blog-text a{
 color:#fe6f63;
 }
+.blog-text a:hover{
+  color:#1e394e;
+  transition: all 0.3s;
+}
 .card-content img{
     width:100%;
     height: 200px;
@@ -691,13 +699,12 @@ color:#fe6f63;
 }
 
 
-.dots-container {
-  text-align: center;
-  margin-top: 15px;
+.splide__pagination {
+  position:relative;
+  margin-top: 20px;
 }
 
-.dots-container .dot {
-  display: inline-block;
+.splide__pagination .splide__pagination__page {
   background-color: #ccc;
   margin: 0 5px;
   cursor: pointer;
@@ -708,15 +715,12 @@ color:#fe6f63;
   transition: all .2s ease-in-out;
 }
 
-.dots-container .dot.active {
+.splide__pagination .is-active {
       opacity: 1;
     background: #3bc990ff;
     width: 2rem;
     transition: all .2s ease-in-out;
     transform: scale(1);
-}
-.slide-clone {
-  width: calc(33.3333%);
 }
 
 @media (max-width: 991.98px) {
@@ -729,19 +733,12 @@ color:#fe6f63;
   width: 90%;
 }
 }
-@media (max-width: 992px) {
-  .slide-clone {
-    width: 50%; 
-  }
-}
-@media (max-width: 768px) {
-  .slide-clone {
-    width: 100%; 
-  }
-}
 @media (max-width: 1199.98px) {
   .eslogan{
     margin-left: 0!important;
     font-size: 1rem;
   }
+}
+#blogSlide .splide__list {
+    transition: transform 1s ease-in-out !important;
 }

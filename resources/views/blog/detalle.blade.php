@@ -37,7 +37,7 @@
 
                 {{-- Imagen principal --}}
                 <div class="my-4">
-                    <img src="{{ asset('storage/'.$blog->imagen) }}" class="img-fluid rounded-4 w-100" alt="Imagen de noticia" style="max-height: 400px; object-fit: cover;">
+                    <img src="{{ asset('storage/'.$blog->imagen) }}" class="img-fluid rounded-4 w-100" alt="Imagen de noticia">
                 </div>
 
                 {{-- Contenido --}}

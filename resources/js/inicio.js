@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     splide1.mount();
-    let autoplayInterval = 6000;
+    let autoplayInterval = 8000;
     let splide1Timer = setInterval(() => {
         splide1.go('>');
     }, autoplayInterval);
@@ -53,66 +53,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     splide2.mount({ AutoScroll });
 
-     const splide3 = new Splide('#blogSlide', {
-
-            perPage: 3
-            , arrows: false
-            , pagination: false
-            , breakpoints: {
-                992: {
-                    perPage: 2
-                }
-                , 768: {
-                    perPage: 1
-                }
-            , }
-        });
-        splide3.mount();
-
-        const track = document.querySelector('#blogSlide .splide__list');
-        const originalSlides = Array.from(document.querySelectorAll('#blogSlide .splide__slide'));
-        const slides = [...originalSlides];
-        const dotsContainer = document.getElementById('blogSlideDots');
-
-
-        originalSlides.forEach(slide => {
-            const clone = slide.cloneNode(true);
-            clone.removeAttribute('style');
-            clone.classList.add('slide-clone');
-            track.appendChild(clone);
-        });
-
-        let currentIndex = 0;
-
-
-        originalSlides.forEach((_, index) => {
-            const dot = document.createElement('span');
-            dot.classList.add('dot');
-            if (index === 0) dot.classList.add('active');
-
-            dot.addEventListener('click', () => {
-                currentIndex = index;
-                goToSlide(currentIndex);
-            });
-
-            dotsContainer.appendChild(dot);
-        });
-
-        function updateDots() {
-            const dots = dotsContainer.querySelectorAll('.dot');
-            dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex % originalSlides.length));
+    const splide3 = new Splide('#blogSlide', {
+        type: 'loop',
+        perPage: 3,
+        perMove: 1,
+        arrows: false,
+        pagination: true, 
+        speed: 1500,
+        easing: 'ease-in-out',
+        breakpoints: {
+            992: {
+                perPage: 2
+            },
+            768: {
+                perPage: 1
+            }
         }
+    });
 
-        function goToSlide(index) {
-            const offset = slides[0].offsetWidth * index;
-            track.style.transition = 'transform 0.6s ease';
-            track.style.transform = `translateX(-${offset}px)`;
-            updateDots();
+    splide3.on('mounted updated', function () {
+        const paginationList = splide3.root.querySelector('.splide__pagination');
+        if (paginationList) {
+            paginationList.style.display = paginationList.children.length <= 1 ? 'none' : '';
         }
+    });
 
-        const intervalTime = 3000;
-        let sliderInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % slides.length;
-            goToSlide(currentIndex);
-        }, intervalTime);
+    splide3.mount();
+
+    const intervalTime = 3600;
+    let splide3Timer = setInterval(() => {
+        splide3.go('+1');
+    }, intervalTime);
+
+    const blogSliderElement = document.getElementById('blogSlide');
+    if (blogSliderElement) {
+        blogSliderElement.addEventListener('mouseenter', () => clearInterval(splide3Timer));
+        blogSliderElement.addEventListener('mouseleave', () => {
+            splide3Timer = setInterval(() => splide3.go('+1'), intervalTime);
+        });
+    }
     });
