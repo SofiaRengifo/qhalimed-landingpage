@@ -740,5 +740,5 @@ color:#fe6f63;
   }
 }
 #blogSlide .splide__list {
-    transition: transform 1s ease-in-out !important;
+    transition: transform 1s ease-in-out;
 }
